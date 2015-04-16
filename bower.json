@@ -1,0 +1,17 @@
+{
+  "name": "md-fab-test",
+  "version": "0.1.0",
+  "homepage": "https://github.com/profoundry-us/md-fab-test",
+  "authors": [
+    "Topher Fangio <topher@profoundry.us>"
+  ],
+  "description": "A quick test of a floating action button for Angular's Material Design project.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

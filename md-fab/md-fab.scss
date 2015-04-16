@@ -1,0 +1,49 @@
+md-fab {
+  display: inline-block;
+  overflow: hidden;
+
+  md-fab-trigger {
+    order: 1;
+  }
+
+  md-fab-speed-dial {
+    order: 2;
+
+    > * {
+      transform: scale(0);
+      transition: transform 0.10s !important;
+    }
+  }
+
+  &:hover, .focus {
+    md-fab-speed-dial {
+      > *:nth-child(1) { transform: scale(1); transition-delay: 50ms !important; }
+      > *:nth-child(2) { transform: scale(1); transition-delay: 100ms !important; }
+      > *:nth-child(3) { transform: scale(1); transition-delay: 150ms !important; }
+      > *:nth-child(4) { transform: scale(1); transition-delay: 200ms !important; }
+      > *:nth-child(5) { transform: scale(1); transition-delay: 250ms !important; }
+      > *:nth-child(6) { transform: scale(1); transition-delay: 300ms !important; }
+    }
+  }
+
+  &[md-direction="up"] {
+    md-fab-trigger {
+      order: 2;
+    }
+
+    md-fab-speed-dial {
+      order: 1;
+    }
+
+    &:hover, .focus {
+      md-fab-speed-dial {
+        > *:nth-child(6) { order: 1; }
+        > *:nth-child(5) { order: 2; }
+        > *:nth-child(4) { order: 3; }
+        > *:nth-child(3) { order: 4; }
+        > *:nth-child(2) { order: 5; }
+        > *:nth-child(1) { order: 6; }
+      }
+    }
+  }
+}

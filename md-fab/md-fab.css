@@ -1,0 +1,46 @@
+md-fab {
+  display: inline-block;
+  overflow: hidden; }
+  md-fab md-fab-trigger {
+    order: 1; }
+  md-fab md-fab-speed-dial {
+    order: 2; }
+    md-fab md-fab-speed-dial > * {
+      transform: scale(0);
+      transition: transform 0.10s !important; }
+  md-fab:hover md-fab-speed-dial > *:nth-child(1), md-fab .focus md-fab-speed-dial > *:nth-child(1) {
+    transform: scale(1);
+    transition-delay: 50ms !important; }
+  md-fab:hover md-fab-speed-dial > *:nth-child(2), md-fab .focus md-fab-speed-dial > *:nth-child(2) {
+    transform: scale(1);
+    transition-delay: 100ms !important; }
+  md-fab:hover md-fab-speed-dial > *:nth-child(3), md-fab .focus md-fab-speed-dial > *:nth-child(3) {
+    transform: scale(1);
+    transition-delay: 150ms !important; }
+  md-fab:hover md-fab-speed-dial > *:nth-child(4), md-fab .focus md-fab-speed-dial > *:nth-child(4) {
+    transform: scale(1);
+    transition-delay: 200ms !important; }
+  md-fab:hover md-fab-speed-dial > *:nth-child(5), md-fab .focus md-fab-speed-dial > *:nth-child(5) {
+    transform: scale(1);
+    transition-delay: 250ms !important; }
+  md-fab:hover md-fab-speed-dial > *:nth-child(6), md-fab .focus md-fab-speed-dial > *:nth-child(6) {
+    transform: scale(1);
+    transition-delay: 300ms !important; }
+  md-fab[md-direction="up"] md-fab-trigger {
+    order: 2; }
+  md-fab[md-direction="up"] md-fab-speed-dial {
+    order: 1; }
+  md-fab[md-direction="up"]:hover md-fab-speed-dial > *:nth-child(6), md-fab[md-direction="up"] .focus md-fab-speed-dial > *:nth-child(6) {
+    order: 1; }
+  md-fab[md-direction="up"]:hover md-fab-speed-dial > *:nth-child(5), md-fab[md-direction="up"] .focus md-fab-speed-dial > *:nth-child(5) {
+    order: 2; }
+  md-fab[md-direction="up"]:hover md-fab-speed-dial > *:nth-child(4), md-fab[md-direction="up"] .focus md-fab-speed-dial > *:nth-child(4) {
+    order: 3; }
+  md-fab[md-direction="up"]:hover md-fab-speed-dial > *:nth-child(3), md-fab[md-direction="up"] .focus md-fab-speed-dial > *:nth-child(3) {
+    order: 4; }
+  md-fab[md-direction="up"]:hover md-fab-speed-dial > *:nth-child(2), md-fab[md-direction="up"] .focus md-fab-speed-dial > *:nth-child(2) {
+    order: 5; }
+  md-fab[md-direction="up"]:hover md-fab-speed-dial > *:nth-child(1), md-fab[md-direction="up"] .focus md-fab-speed-dial > *:nth-child(1) {
+    order: 6; }
+
+/*# sourceMappingURL=md-fab.css.map */
